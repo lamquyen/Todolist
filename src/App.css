@@ -1,0 +1,92 @@
+.App {
+  text-align: center;
+}
+
+.todo-app {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+form {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+input[type="text"] {
+  width: 70%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:disabled {
+  background-color: #ccc;
+}
+
+button.active {
+  background-color: #007bff;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+
+}
+
+li span {
+  flex-grow: 1;
+  margin-left: 10px;
+  text-align: justify;
+}
+
+.filter {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+  border-bottom: 1px solid gray;
+  padding-bottom: 10px;
+}
+
+.filter button {
+  background-color: white;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+  position: relative;
+}
+
+.filter button.active {
+  font-weight: bold;
+  color: #007bff;
+}
+
+.filter button.active::after {
+  content: '';
+  position: absolute;
+  bottom: -11px;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: #007bff;
+}
+
+.button-add {
+  width: 21%;
+}
